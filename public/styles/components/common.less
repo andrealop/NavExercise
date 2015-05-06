@@ -1,0 +1,49 @@
+@magenta: #ec008c;
+@light-gray: #eee;
+@translucent-black: rgba(0, 0, 0, 0.5);
+@desktop: 768px;
+
+body {
+    font: 14px/24px Galaxie;
+}
+h1 {
+    font: 44px/48px Galaxie;
+}
+p {
+  
+}
+a {
+    text-decoration: none;
+    &:hover, .active, :active, :focus {
+        text-decoration: none;
+        outline: 0;
+    }
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hidden-mobile {
+    display: none;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: @translucent-black;
+    z-index: 10000;
+    display: block;
+}
+
+@media screen and (min-width: @desktop) {
+    .hidden-desktop {
+        display: none !important;
+    }
+    #overlay {
+        background-color: transparent;
+    }
+}
