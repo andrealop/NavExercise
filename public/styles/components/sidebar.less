@@ -1,0 +1,23 @@
+@media screen and (max-width: 767px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .push-right {
+        position: relative;
+        width: 100%;
+        -webkit-transition: all .25s ease-out;
+             -o-transition: all .25s ease-out;
+                transition: all .25s ease-out;
+        left: 0;
+        &.active {
+            left: calc(~'100% - 72px');
+            width: 100%;
+        }
+    }
+    #sidebar {
+        left: calc(~'-100% + 72px');
+        position: absolute;
+        top: 0;
+        width: calc(~'100% - 72px');
+    }
+}
