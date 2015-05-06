@@ -1,0 +1,51 @@
+#main-content {
+	.hero {
+		background-image: url('../images/background-image.jpg');
+	  	background-position: center center;
+	  	background-repeat: no-repeat;
+	  	background-size: 150%;
+	  	height: 240px;
+	  	h1 {
+	  		font: 44px/48px HUGEAvantGardeBold;
+	  		margin-top: 240px;
+	  		padding: 50px 24px;
+	  		float: left;
+	  	}
+	}
+	.module {
+		p {
+			font: 14px/24px Galaxie;
+			padding: 0 24px;
+		}
+	}
+}
+
+@media screen and (min-width: @desktop) {
+	#main-content {
+		.hero {
+			height: 640px;
+			background-size: cover;
+			text-align: center;
+			h1 {
+				position: relative;
+				font: 120px/132px HUGEAvantGardeBold;
+				color: #fff;
+				top: 50%;
+				left: 50%;
+				margin-top: 0;
+				max-width: 968px;
+			  	-webkit-transform: translate(-50%, -50%);
+			  		-ms-transform: translate(-50%, -50%);
+			  			transform: translate(-50%, -50%);
+			}
+		}
+		.module {
+			max-width: 968px;
+			margin: 0 auto;
+			padding: 60px 0;
+			p {
+				font: 24px/36px Galaxie;
+			}
+		}
+	}
+}
